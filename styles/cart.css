@@ -1,0 +1,286 @@
+a,
+p {
+  font-size: 1.2rem;
+  font-family: Righteous;
+  letter-spacing: 0.2rem;
+}
+p {
+  text-align: left;
+}
+h1 {
+  text-align: center;
+  margin-top: 10rem;
+}
+h2 {
+  letter-spacing: 0.4vw;
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  font-family: Righteous;
+}
+h3 {
+  font-family: 'Rock Salt';
+  transform: rotate(5deg);
+  letter-spacing: 0.25rem;
+  visibility: hidden;
+  position: absolute;
+  font-weight: 100;
+  font-size: 1vw;
+  bottom: 4vh;
+  left: 42vw;
+}
+#tri-parent {
+  background-color: #f28b30;
+  transform: rotate(-15deg);
+  border: 5px solid #000;
+  position: absolute;
+  width: 150vw;
+  height: 85vh;
+  top: -25vh;
+  left: -40vw;
+  overflow: hidden;
+  z-index: -2;
+}
+#cart {
+  position: fixed;
+  padding: 1rem;
+  border: 2px solid #000;
+  margin: 0;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 6rem;
+  height: 6rem;
+  background-color: #f28b30;
+  right: 2rem;
+  top: 2%;
+  border-radius: 5000px;
+}
+#cart h2 {
+  font-size: 2rem;
+}
+#cart img {
+  margin: auto 0;
+  width: 4rem;
+  height: 4rem;
+  transform: translateX(15%);
+}
+.tri {
+  visibility: hidden;
+  background-color: #f2e529;
+  border: 5px solid #000;
+  position: absolute;
+  overflow: hidden;
+  transform: rotate(-20deg);
+  height: 150%;
+  left: 0;
+  width: 25%;
+  z-index: -3;
+  top: 0;
+}
+#menuGrid {
+  text-align: center;
+  width: fit-content;
+  max-width: 90vw;
+  margin: 20rem auto 50vh;
+  justify-content: left;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+div .menuItem {
+  width: 80vw;
+  margin-top: 200px;
+  height: fit-content;
+  margin-bottom: 10vh;
+}
+#summary {
+  margin-top: 50vh;
+  border-right: 5px solid #f2e529;
+  padding-right: 3rem;
+  width: 50vw;
+  min-width: fit-content;
+  height: 25rem;
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(2rem);
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menuItem form {
+  margin-top: 2rem;
+}
+#summary h2 {
+  font-size: 2.5rem;
+}
+#summary h1 {
+  font-size: 2rem;
+  padding: 0;
+}
+.menuItem .image {
+  background-position: center;
+  border-radius: 5000px;
+  border: 5px solid #000;
+  height: 18rem;
+  width: 18rem;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+}
+.menuItem .item-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.menuItem h2 {
+  margin-bottom: 0;
+}
+#name,
+#priceLine {
+  width: calc(100% - 4rem);
+  font-size: 3rem;
+  padding: 2rem 2rem;
+}
+#name {
+  font-family: 'Rampart One';
+  font-size: 5rem;
+  border-bottom: 5px solid #f2e529;
+}
+#price {
+  text-align: left;
+  display: inline-block;
+  font-size: inherit;
+}
+#rightData {
+  text-align: right;
+  font-size: inherit;
+  margin: inherit;
+  line-height: inherit;
+  flex: 1;
+}
+#infoRow {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  padding-left: 1rem;
+  border-bottom: 2px solid #000;
+  align-items: baseline;
+}
+form button {
+  text-align: center;
+  height: fit-content;
+  background-color: #f2e529;
+  border: 5px solid #000;
+  border-radius: 50000px;
+  padding: 0 0 0.5rem 0.2rem;
+  margin: 0;
+  width: 100%;
+}
+form button h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+.item-info p {
+  margin: 0 0 0 0.5rem;
+  padding-left: 1rem;
+}
+@media (min-width: 1500px) {
+  #summary {
+    position: absolute;
+    width: fit-content;
+    top: 50vh;
+    right: 8rem;
+    margin-top: 5rem;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    text-align: left;
+  }
+  h1 {
+    font-size: 9rem;
+  }
+  h2 {
+    letter-spacing: 0.621rem;
+    padding-left: 0.4rem;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+  }
+  h3 {
+    visibility: visible;
+  }
+  .menuItem form {
+    margin-top: 0rem;
+  }
+  #summary {
+    margin-bottom: 50vh;
+  }
+  #name {
+    border-bottom: none;
+  }
+  #name,
+  #priceLine {
+    width: 100%;
+    font-size: 2rem;
+    padding: 0rem 0rem;
+  }
+  #name {
+    font-size: 3rem;
+  }
+  #menuGrid {
+    margin-top: 50rem;
+    text-align: left;
+    margin-left: 5rem;
+  }
+  #price {
+    text-align: right;
+    float: right;
+  }
+  #hero {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    transform: rotate(40deg);
+    width: 20vw;
+    visibility: visible;
+  }
+  #tri-parent {
+    max-height: 70rem;
+    height: 80vh;
+    min-height: 40vh;
+  }
+  .tri {
+    visibility: visible;
+    width: 45%;
+  }
+  div .menuItem {
+    flex-direction: row;
+    text-align: left;
+    height: auto;
+    width: 50rem;
+    margin: 15rem 3rem;
+    display: flex;
+    flex: 1;
+  }
+  .menuItem .item-info {
+    border-left: 5px solid #f2e529;
+    padding-left: 3rem;
+    border-top: none;
+    margin-left: 2rem;
+    height: auto;
+    width: 25rem;
+  }
+  .item-info p {
+    margin-left: 0.5rem;
+  }
+  form button {
+    width: 60%;
+  }
+}

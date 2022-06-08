@@ -1,0 +1,137 @@
+.tri {
+  background-color: #f28b30;
+  width: 50vw;
+  border: 5px solid #000;
+  height: 150%;
+  position: absolute;
+  top: 0;
+  left: -30vw;
+  transform: rotate(-15deg);
+  overflow: hidden;
+}
+.tri-yellow {
+  background-color: #f2e529;
+  width: 100vw;
+  border: 5px solid #000;
+  height: 60vh;
+  top: -15vh;
+  position: absolute;
+  transform: rotate(30deg);
+}
+.tri:nth-of-type(2) .tri-yellow {
+  transform: rotate(-30deg);
+  right: 0;
+}
+.tri:nth-of-type(2) {
+  right: -30vw;
+  left: auto;
+  transform: rotate(15deg);
+}
+.quote {
+  opacity: 70%;
+  visibility: hidden;
+  position: absolute;
+  padding: 0 15px;
+  margin: 0;
+  top: 0;
+  font-family: 'Rock Salt';
+  font-size: 0.7rem;
+  letter-spacing: 0.2rem;
+  list-style: none;
+  width: 12vw;
+  height: 90vh;
+}
+.quote li {
+  margin-top: 12vh;
+  margin-bottom: 15vh;
+  position: absolute;
+}
+#hero {
+  z-index: -1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 63vw;
+  top: 50vh;
+  visibility: hidden;
+}
+#abt,
+#loc,
+#ord {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: fit-content;
+}
+#abt,
+#loc {
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  padding-left: calc(0.5rem + 5px);
+}
+#leftList {
+  left: 0;
+  transform: rotate(-10deg);
+}
+#leftList li {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#leftList :nth-child(1) {
+  transform: rotate(25deg);
+  top: 0;
+}
+#leftList :nth-child(2) {
+  transform: rotate(15deg);
+  top: 33vh;
+}
+#leftList :nth-child(3) {
+  top: 60vh;
+  transform: rotate(5deg);
+}
+#rightList {
+  transform: rotate(10deg);
+  left: auto;
+  right: 2vw;
+}
+#rightList li {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#rightList :nth-child(1) {
+  top: 0;
+  transform: rotate(-25deg);
+  margin-bottom: 25vh;
+}
+#rightList :nth-child(2) {
+  transform: rotate(-15deg);
+  top: 33vh;
+}
+#rightList :nth-child(3) {
+  top: 60vh;
+  transform: rotate(-5deg);
+}
+@media (min-width: 1200px) {
+  .quote {
+    visibility: visible;
+  }
+  #loc {
+    background-color: #78bfb8;
+    left: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    right: auto;
+  }
+  #abt {
+    background-color: #78bfb8;
+    right: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    left: auto;
+  }
+  #hero {
+    visibility: visible;
+  }
+}

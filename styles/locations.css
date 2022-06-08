@@ -1,0 +1,168 @@
+a,
+p {
+  font-size: 1.2rem;
+  font-family: Righteous;
+  letter-spacing: 0.2rem;
+}
+p {
+  text-align: left;
+}
+h1 {
+  text-align: center;
+  margin-top: 3rem;
+}
+h2 {
+  letter-spacing: 0.4vw;
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+h3 {
+  font-family: 'Rock Salt';
+  transform: rotate(5deg);
+  letter-spacing: 0.25rem;
+  visibility: hidden;
+  position: absolute;
+  font-weight: 100;
+  font-size: 1vw;
+  bottom: 4vh;
+  left: 42vw;
+}
+.location h2 {
+  border-top: 10px solid #f28b30;
+  padding: 2rem 0;
+  font-size: 4rem;
+}
+.location p {
+  border-left: 10px solid #f28b30;
+  padding-left: 10px;
+}
+#map {
+  margin: 3rem 0 0;
+  border: 5px solid #000;
+  width: 100%;
+  height: 40vh;
+}
+ul {
+  padding: 0;
+  margin-top: 30rem;
+}
+.location {
+  width: 80vw;
+  margin: 10rem auto;
+  height: max-content;
+  justify-content: center;
+}
+#imageFlex {
+  flex: 1;
+  width: 100%;
+  row-gap: 0.5rem;
+  margin-top: 3rem;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.shopImg {
+  width: 100%;
+  height: 40vh;
+  border: 5px solid #000;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+}
+li {
+  list-style-type: none;
+}
+#tri-parent {
+  background-color: #f28b30;
+  transform: rotate(-15deg);
+  border: 5px solid #000;
+  position: absolute;
+  width: 150vw;
+  height: 85vh;
+  top: -25vh;
+  left: -40vw;
+  overflow: hidden;
+  z-index: -2;
+}
+.tri {
+  visibility: hidden;
+  background-color: #f2e529;
+  border: 5px solid #000;
+  position: absolute;
+  overflow: hidden;
+  transform: rotate(-20deg);
+  height: 150%;
+  left: 0;
+  width: 25%;
+  z-index: -3;
+  top: 0;
+}
+@media (min-width: 1200px) {
+  body {
+    text-align: left;
+  }
+  h1 {
+    font-size: 9rem;
+  }
+  h2 {
+    letter-spacing: 0.621rem;
+    padding-left: 0.4rem;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+  }
+  h3 {
+    visibility: visible;
+  }
+  ul {
+    margin-top: 45rem;
+  }
+  p {
+    line-height: 3.5rem;
+    font-size: 1.8rem;
+    width: 30vw;
+  }
+  .location {
+    display: flex;
+    width: 50vw;
+    margin: 30rem auto;
+  }
+  .location div {
+    display: flex;
+    flex-direction: column;
+  }
+  #imageFlex {
+    margin-top: 0;
+    margin-left: 10vw;
+    row-gap: 3rem;
+    width: unset;
+  }
+  .shopImg {
+    width: 20vw;
+    flex: 1;
+  }
+  #hero {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    transform: rotate(40deg);
+    width: 20vw;
+    visibility: visible;
+  }
+  #tri-parent {
+    max-height: 70rem;
+    height: 80vh;
+    min-height: 40vh;
+  }
+  #map {
+    margin-top: 0;
+    height: unset;
+    min-height: 40vh;
+  }
+  .tri {
+    visibility: visible;
+    width: 45%;
+  }
+}

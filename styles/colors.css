@@ -1,0 +1,11 @@
+:root {
+  --blue: #78bfb8;
+  --orange: #f28b30;
+  --tan: #ffe794;
+  --yellow: #f2e529;
+  --text: rgb(41, 41, 41);
+  --Text-accent-color: var(--main-color);
+  --background-color: #333030;
+  --background-light-color: rgb(245, 245, 245);
+  --background-dark-color: rgb(31, 31, 31);
+}

@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css2?family=Rampart+One&family=Righteous&family=Rock+Salt&display=swap);
+::selection {
+  border-radius: 500px;
+  color: #000;
+  background-color: #f28b30;
+}
+body::-webkit-scrollbar {
+  width: 0.1em;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px 10px #000;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #f28b30;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #292929;
+  font-size: 3rem;
+  font-family: 'Rampart One';
+  text-align: center;
+  letter-spacing: 3rem;
+  background-color: #78bfb8;
+}
+h1 {
+  margin: 0;
+  padding-top: 35px;
+  padding-left: 1vw;
+  font-size: 18vw;
+  line-height: 1em;
+  font-family: Righteous;
+  letter-spacing: 1vw;
+}
+h2 {
+  margin: 0 0 125px;
+  padding-left: 7vw;
+  font-size: 7vw;
+  line-height: 1em;
+  letter-spacing: 7vw;
+  font-variant-caps: all-small-caps;
+}
+h3 {
+  font-family: 'Rock Salt';
+}
+a {
+  position: relative;
+  display: block;
+  margin-bottom: 50px;
+  z-index: 3;
+  letter-spacing: 1rem;
+  background-color: #ffe794;
+  padding: 5px;
+  padding-left: calc(1rem + 5px);
+  border: 3px solid #000;
+  border-radius: 50px;
+  font-family: Righteous;
+  text-decoration: none;
+  color: #292929;
+  transition: 0.1s ease-in;
+}
+a:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+a:active {
+  transform: scale(0.8) rotate(5deg);
+}
+.Grunge:not(a) {
+  -webkit-mask-image: url('../images/Texture04-byGhostlyPixels.png');
+  mask-image: url('../images/Texture04-byGhostlyPixels.png');
+  -webkit-mask-size: 2000px;
+}
+.errorText {
+  text-align: center;
+  padding: 5rem;
+  color: #ff475d;
+  width: 100vw;
+}
+#bckF {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+#bck {
+  margin: 0;
+  width: min-content;
+  padding: 1rem;
+  background-color: #ffffff00;
+  border: none;
+  transition: 0.2s;
+}
+#bck:hover {
+  transform: scale(1.2) rotate(-10deg);
+}
+#bck:active {
+  transform: scale(0.8) rotate(-5deg);
+}
+a.subtle,
+button {
+  transition: 0.2s;
+}
+a.subtle:hover,
+button:hover {
+  transform: scale(1.1);
+}
+a.subtle:active,
+button:active {
+  transform: scale(0.8);
+}
+#name {
+  font-variant: titling-caps;
+  font-family: 'Rampart One';
+  line-height: normal;
+  font-size: 2.5rem;
+}
+#overLay {
+  overflow-x: hidden;
+  position: absolute;
+  pointer-events: none;
+  z-index: 5;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  background-image: url('../images/background.png'), url('../images/Texture10-byGhostlyPixels.png');
+  background-size: 1000px, 2000px;
+  background-repeat: repeat;
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 10rem;
+    padding-top: 5px;
+    letter-spacing: 1rem;
+  }
+  h2 {
+    font-size: 5rem;
+    letter-spacing: 4rem;
+    padding-left: 4rem;
+  }
+  a {
+    bottom: 3vh;
+    background-color: #ffe794;
+    position: absolute;
+  }
+  .Grunge {
+    -webkit-mask-image: url('../images/Texture04-byGhostlyPixels.png');
+    mask-image: url('../images/Texture04-byGhostlyPixels.png');
+    -webkit-mask-size: 2000px;
+  }
+  #overLay {
+    z-index: 2;
+  }
+}
